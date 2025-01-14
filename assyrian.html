@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+        <title>My Background</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <title>bootstrap</title>
+        <style>
+            .title4 {
+                font-size: 3rem;
+                font-family: "Merriweather";
+                font-weight: bold;
+                letter-spacing: 4px;
+                position: relative;
+                margin-bottom: 20;
+                color: #5ab9db;
+            }
+            .title4::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 5px;
+                background: linear-gradient(90deg, #b52884, #a64747); /* Gradient underline */
+                border-radius: 10px;
+                animation: underlineAnimation 1s ease-out infinite;
+            }
+        </style>
+    </head>
+    <body class = "body container fade-in">
+        <div class = "title4">
+            "Assyrian? Wow, I've never been to Syria!"
+        </div>
+        <div class = "content">
+            <div class = "text-content">
+                <p>Okay, first thing: I'm NOT Syrian. Assyrian is a totally different ethnicity that has been turned into mostly a diaspora due to genocide commited to our people.</p>
+                <p>There's a prety big community of us living over in Western Sydney and other bits of the world like Sweden and Detroit in the US, but most Assyrians are still back home dealing with oppression and hatred.</p>
+                <p>I am so blessed to be surrounded with my community and am proud to be Assyrian: I've joined ASAUNSW which is the Assyrian society for UNSW students.</p>
+                <p>But my roots are in Iraq: that's where my parents were born and raised, with my oldest sister being born nearby over in Jordan. As immigrants, my parents fought extremely hard to give me and my siblings a better life overesas.</p>
+            </div>
+            <div class = "image-content">
+                <img src = "images/church.jpg">
+            </div>
+        </div>
+        <div class = "content text-content" style= "max-width: 100%;">
+            That's by far what motivates me to keep moving forward and doing my best: the sacrifices that the people I love have made to give me these oppurtunities. I am proud of this and will keep pushing forward
+            to be the best that I can be.
+        </div>
+        <script src="script.js"></script>
+    </body>
+    <div>
+        <footer>
+        <button id="homeButton" onclick="location.href='index.html'">Go to Home</button>
+        <img src = "images/plane.png" class = "plane">
+        </footer>
+    </div>
+</html>

@@ -1,0 +1,257 @@
+.welcomebody {
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px); /* Start slightly shifted down */
+    transition: opacity 1s ease, transform 1s ease; /* Smooth fade and slide */
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0); /* Move to original position */
+}
+
+.background
+{
+    background-image: url('images/background.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+p {
+    color: #ddd;
+}
+
+.title {
+    font-size: 3rem; /* Large text size */
+    font-family: "Merriweather";
+    font-weight: bold;
+    letter-spacing: 4px;
+    position: relative;
+    margin-bottom: 20;
+    color: #f28705;
+}
+
+.title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px; /* Underline thickness */
+    background: linear-gradient(90deg, #ff7e5f, #feb47b); /* Gradient underline */
+    border-radius: 10px;
+    animation: underlineAnimation 1s ease-out infinite;
+}
+
+.title2 {
+    font-size: 8rem; /* Large text size */
+    font-family: "Merriweather";
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 4px;
+    position: relative;
+    margin-bottom: 20;
+    color: #133194;
+}
+
+.strip {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #e396d7;
+}
+
+.title3 {
+    font-size: 3rem; /* Large text size */
+    font-family: "Merriweather";
+    font-weight: bold;
+    letter-spacing: 4px;
+    position: relative;
+    margin-bottom: 20;
+    color: #f28705;
+}
+
+.title3::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px; /* Underline thickness */
+    background: linear-gradient(90deg, #1262a3, #74b7ed); /* Gradient underline */
+    border-radius: 10px;
+    animation: underlineAnimation 1s ease-out infinite;
+}
+
+.text-content {
+    flex: 1;
+    max-width: 50%;
+    font-size: 20px;
+}
+
+.image-content {
+    margin-left: 20px;
+    flex: 1;
+    text-align: right;
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.swiper {
+    display: flex;
+    flex: 1;
+    border-radius: 10px;
+    text-align: right;
+    margin-right: 20px;
+    max-height: 100vh;
+  }
+
+  .swiper-slide {
+    height: 100%;
+  }
+
+  .swiper img {
+    max-width: 100%;
+    height: auto;
+  }
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.swiper-wrapper {
+    max-height: 100%;
+}
+.body
+{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #1e1e1e, #2b2b2b);
+    color: white;
+    min-height: 100vh;
+    line-height: 1.6;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.welcome
+{
+    font-size: 80px;
+    font-family: "Merriweather";
+    text-align: center;
+    color: white;
+}
+
+.marker {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    transition: transform 0.3s ease;
+}
+
+.plane {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    right: 35px;
+}
+
+.m-aus
+{
+    left: 1295px;
+    top: 525px;
+}
+
+.marker:hover {
+    transform: scale(1.2) translateY(-10px);
+}
+
+.m-syd
+{
+    left: 1325px;
+    top: 530px;
+}
+.m-iraq
+{
+    left: 860px;
+    top: 250px;
+}
+
+.m-leb
+{
+    left: 825px;
+    top: 245px;
+}
+
+.m-us
+{
+    left: 300px;
+    top: 150px;
+    height: 30px;
+    width: 30px;
+}
+
+
+
+.m-russ
+{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 1150px;
+    top: 125px;
+}
+
+.m-sa
+{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 475px;
+    top: 450px;
+}
+
+.m-af
+{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 820px;
+    top: 425px;
+}
